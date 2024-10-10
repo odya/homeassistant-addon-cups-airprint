@@ -1,5 +1,5 @@
 name: CUPS
-version: "1.0.4"
+version: "1.0.5"
 slug: cupsik
 description: A CUPS print server with working AirPrint
 arch:
@@ -20,4 +20,6 @@ webui: https://[HOST]:[PORT:631]/
 # ingress_stream: true
 map:
   - config:rw
+schema:
+  log_level: list(trace|debug|info|notice|warning|error|fatal)?
 
